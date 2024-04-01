@@ -68,6 +68,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-
+gem "pg"
 gem "langchainrb_rails"
 gem "ruby-openai"
