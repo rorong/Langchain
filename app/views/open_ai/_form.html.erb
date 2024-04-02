@@ -1,0 +1,17 @@
+<%= form_for :create_image, url: create_image_path, method: :post, remote: true do |f| %>
+  <%= f.hidden_field :uuid, value: @uuid %>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.text_area :prompt, class: "form-control", placeholder: "Enter your prompt here",required: true %>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center mt-1">
+      <%= f.submit "Send", class: "btn btn-primary btn-block" %>
+    </div>
+  </div>
+<% end %>

@@ -71,3 +71,4 @@ end
 gem "pg"
 gem "langchainrb_rails"
 gem "ruby-openai"
+gem 'dotenv', groups: [:development, :test]
